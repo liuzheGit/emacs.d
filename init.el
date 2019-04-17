@@ -66,7 +66,7 @@
 
 (global-company-mode t)
 (setq-default cursor-type 'bar)
-(setq make-backup-file nil)
+(setq make-backup-files nil)
 
 (require 'org)
 (setq org-src-fontify-natively t)
@@ -86,6 +86,15 @@
 (require 'hungry-delete)
 (global-hungry-delete-mode)
 
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+;; enable this if you want `swiper' to use it
+;; (setq search-default-mode #'char-fold-to-regexp)
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -94,7 +103,7 @@
  '(custom-safe-themes
    (quote
     ("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" default)))
- '(package-selected-packages (quote (company))))
+ '(package-selected-packages (quote (ace-window company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
