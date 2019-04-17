@@ -94,12 +94,15 @@
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "M-x") 'counsel-M-x)
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "C-h f")  'counsel-describe-function)
+(global-set-key (kbd "C-h v") 'counsel-describe-variable)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-idle-delay 0.05)
  '(custom-safe-themes
    (quote
     ("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" default)))
