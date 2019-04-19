@@ -78,8 +78,8 @@
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 (global-hl-line-mode t)
 (load-theme 'monokai t)
-(set-default-font "-outline-Source Code Pro Medium-normal-normal-normal-mono-21-*-*-*-c-*-iso8859-1
-       full name: Source Code Pro Medium-16.0")
+(set-default-font "-outline-Source Code Pro-normal-normal-normal-mono-19-*-*-*-c-*-iso10646-1
+       full name: Source Code Pro-14.5")
 (setq ring-bell-function 'ignore)
 
 (require 'hungry-delete)
@@ -97,6 +97,7 @@
 
 (require 'smartparens-config)
 (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+(smartparens-global-mode t)
 ;; js file ide 
 (setq auto-mode-alist
       (append
