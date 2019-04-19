@@ -29,6 +29,7 @@
 		exec-path-from-shell
 		;; --- Themes ---
 		monokai-theme
+		popwin
 		;; solarized-theme
 		) "Default packages")
 
@@ -104,6 +105,9 @@
       (append
        '(("\\.js\\'" . js2-mode))
        auto-mode-alist))
+
+(require 'popwin)
+(popwin-mode t)
 
 (custom-set-variables
 
