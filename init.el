@@ -66,6 +66,7 @@
 (global-company-mode t)
 (setq-default cursor-type 'bar)
 (setq make-backup-files nil)
+(setq auto-save-default nil)
 
 (require 'org)
 (setq org-src-fontify-natively t)
